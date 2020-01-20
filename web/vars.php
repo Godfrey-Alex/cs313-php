@@ -3,6 +3,7 @@ $username = htmlspecialchars($_POST['username']);
 $email = htmlspecialchars($_POST['emailAddress']);
 $major = htmlspecialchars($_POST['major']);
 $comments = htmlspecialchars($_POST['comments']);
+$continents = ($_POST['Continents']);
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +16,7 @@ $comments = htmlspecialchars($_POST['comments']);
 <h1> mailto: <a href="mailto:<?=$email ?>"><?=$email ?></a></h1>
 <h1> Major: <?php echo $major; ?></h1>
 <h1> Comments: <?php echo $comments; ?></h1>
+<h1> Continents Visited: <?php echo $continents ?></h1>
 
 </body>
 
