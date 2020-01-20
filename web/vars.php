@@ -1,5 +1,8 @@
 <?php
 $username = htmlspecialchars($_POST['username']);
+$email = htmlspecialchars($_POST['emailAddress']);
+$major = htmlspecialchars($_POST['major']);
+$comments = htmlspecialchars($_POST['comments']);
 ?>
 
 <!DOCTYPE html>
@@ -9,6 +12,10 @@ $username = htmlspecialchars($_POST['username']);
 
 <body>
 <h1> Welcome user: <?php echo $username; ?></h1>
+<h1> mailto: <?php echo $email; ?></h1>
+<h1> Major: <?php echo $major; ?></h1>
+<h1> Comments: <?php echo $comments; ?></h1>
+
 </body>
 
 </html>

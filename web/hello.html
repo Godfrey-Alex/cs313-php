@@ -9,11 +9,18 @@
 </head>
 
 <body>
-   <form method ="POST" action="vars.php">
-       <input type="text" name="username"><br>
-       <input type="submit">
-   </form>
+    <form method="POST" action="vars.php">
+        Name: <input type="text" name="username"><br>
+        Email: <input type="text" name="emailAddress"><br>
+        Major:<br>
+        <input type="radio" name="major" value="Computer Science" checked> Computer Science<br>
+        <input type="radio" name="major" value="Web Design and Development"> Web Design and Development<br>
+        <input type="radio" name="major" value="Computer Information Technology"> Computer Information Technology<br>
+        <input type="radio" name="major" value="Computer Engineering"> Computer Engineering<br>
+        Comments: <br>
+        <textarea name="comments"></textarea><br>
+        <input type="submit">
+    </form>
 </body>
 
 </html>
-
