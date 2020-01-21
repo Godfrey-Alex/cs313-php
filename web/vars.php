@@ -15,8 +15,16 @@ $continents = ($_POST['Continents']);
 <h1> Welcome user: <?php echo $username; ?></h1>
 <h1> mailto: <a href="mailto:<?=$email ?>"><?=$email ?></a></h1>
 <h1> Major: <?php echo $major; ?></h1>
-<h1> Comments: <?php echo $comments; ?></h1>
 <h1> Continents Visited: <?php echo $continents ?></h1>
+<ul>
+<?
+foreach ($continents as $continents){
+    $_continents=htmlspecialchars($continents);
+    echo "<li><p>$_continents</p></li>";
+}
+?>
+</ul>
+<h1> Comments: <?php echo $comments; ?></h1>
 
 </body>
 
