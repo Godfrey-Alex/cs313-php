@@ -13,7 +13,7 @@ $cart = ($_POST['item']);
 
 <body>
 <h1>Your Cart:</h1>
-
+<form method="post" action="checkout.php">
 <ul>
 <?
 foreach ($cart as $cart){
@@ -22,7 +22,8 @@ foreach ($cart as $cart){
 }
 ?>
 </ul>
-<
+<input type="submit" value="Check Out">
+</form>
 
 </body>
 
