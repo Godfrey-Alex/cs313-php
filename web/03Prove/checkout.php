@@ -3,7 +3,7 @@ $username = htmlspecialchars($_POST['username']);
 $email = htmlspecialchars($_POST['emailAddress']);
 $major = htmlspecialchars($_POST['major']);
 $comments = htmlspecialchars($_POST['comments']);
-$cart = ($_POST['item']);
+$cart = ($_POST['$cart']);
 ?>
 
 <!DOCTYPE html>
