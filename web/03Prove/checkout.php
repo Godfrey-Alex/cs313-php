@@ -12,7 +12,7 @@ $cart = ($_POST['$cart']);
 </head>
 
 <body>
-<h1>Your Cart:</h1>
+<h1>Checkout:</h1>
 <form method="post" action="confirmation.php">
 <ul>
 <?
