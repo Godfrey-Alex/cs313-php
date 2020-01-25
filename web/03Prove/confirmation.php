@@ -28,7 +28,6 @@ City: <input type="text" name="city"><br>
 Zip: <input type="text" name="zip"><br>
 State: <input type="text" name="state"><br>
 Country: <input type="text" name="co"><br>
-<input type="submit" value="Check Out">
 </form>
 
 </body>
