@@ -22,7 +22,6 @@ foreach ($cart as $cart){
 }
 ?>
 </ul>
-<
 
 </body>
 
