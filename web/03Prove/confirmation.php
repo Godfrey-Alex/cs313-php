@@ -12,7 +12,8 @@ $cart = ($_POST['$cart']);
 </head>
 
 <body>
-<h1>Checkout:</h1>
+<h1>Thank You for your order</h1>
+<p>It will be delivered to the following address:</p>
 <form method="post" action="confirmation.php">
 <ul>
 <?
