@@ -1,96 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
-    <meta charset="UTF-8">
+<head>    <meta charset="UTF-8">
     <title>Nerd Store</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mobile Applications">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-
-<body>
-    <?php
-    class Item{
-        public $name;
-        public $price;
-
-        public function __construct($_name, $_price){
-            $this->name=$_name;
-            $this->price=$_price;
-        }
-
-        function setName($n){
-            $this->name=$n;
-        }
-        function getName(){
-            echo $this->name"<br>";
-        }
-        function setPrice($p){
-            $this->price=$p
-        }
-        function getPrice(){
-            echo $this->price"<br>";
-        }
-    }          
-    ?>
+<body>    
     <div id="nav">
         <a href="https://www.w3schools.com">Shopping</a>
         <a href="https://www.w3schools.com">Go to Cart</a>
     </div>
     <div id="items">
 
-        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+        <form method="post" action="cart.php">
             <br>
             <img src="images/Artoo.PNG" alt="Artoo" height=100% width=auto><br>
             <p>Remote Control R2-D2<br>$29.99</p>
-            <button onclick="addr2()">add to cart</button><br>
+            <input type="checkbox" name="item[]" value="R2-D2"> Add to cart<br>
             <img src="images/ATST.PNG" alt="AT-ST" height=100% width=auto><br>
             <p>Model AT-ST<br>$45.99</p>
-            <button onclick="addatst()">add to cart</button><br>
+            <input type="checkbox" name="item[]" value="AT-ST"> Add to cart<br>
             <img src="images/DarthVader.PNG" alt="Darth Vader" height=100% width=auto><br>
             <p>Darth Vader Mask<br>$59.99</p>
-            <button onclick="addmask()">add to cart</button><br>
+            <input type="checkbox" name="item[]" value="DarthVader Helmet"> Add to cart<br>
             <img src="images/lightSaber.PNG" alt="Light Saber" height=100% width=auto><br>
-            <p>lightSaber Collection Set<br>$129.99</p>
-            <button onclick="addsaber()">add to cart</button><br>
+            <p>LightSaber Collection Set<br>$129.99</p>
+            <input type="checkbox" name="item[]" value="Light Saber"> Add to cart<br>
+            <input type="submit" value="Go to Cart">
         </form>
-    </div>
-    <script>
-
-        var cart = new Array();
-        function item(n, p) {
-            this.name = n;
-            this.price = p;
-        }
-        var artoo = new item("Artoo", 29.99);
-        var atst = new item("AT-ST", 45.99);
-        var darthvader = new item("Darth Vader", 59.99);
-        var lightsaber = new item("Light Saber", 129.99);
-        var tieFighter = new item("Tie Fighter", 19.99);
-        var xwing = new item("W-Wing", 19.99);
-
-        function addr2() {
-            cart.push(artoo);
-        }
-        function addatst() {
-            cart.push(atst);
-        }
-        function addmask() {
-            cart.push(darthvader);
-        }
-        function addsaber() {
-            cart.push(lightsaber);
-        }
-        function addTie() {
-            cart.push(tieFighter);
-        }
-        function addXwing() {
-            cart.push(xwing);
-        }
-        cart.push(artoo);
-
-    </script>
+    </div>   
 
 </body>
 
