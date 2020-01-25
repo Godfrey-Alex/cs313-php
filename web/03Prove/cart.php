@@ -13,7 +13,7 @@ $username = htmlspecialchars($_POST['username']);
 $email = htmlspecialchars($_POST['emailAddress']);
 $major = htmlspecialchars($_POST['major']);
 $comments = htmlspecialchars($_POST['comments']);
-$_SESSION["cart"] = ($_POST['item']);
+$cart = ($_POST['item']);
 ?>
 
 
@@ -22,9 +22,9 @@ $_SESSION["cart"] = ($_POST['item']);
 <form method="POST" action="checkout.php">
 <ul>
 <?
-foreach ($_SESSION["cart"] as $_SESSION["cart"]){
-    $_SESSION["cart"]=htmlspecialchars($_SESSION["cart"]);
-    echo "<li><p>$_SESSION["cart"]</p></li>";
+foreach ($cart as $cart){
+    $$cart=htmlspecialchars($cart);
+    echo "<li><p>$cart</p></li>";
 }
 ?>
 </ul>
